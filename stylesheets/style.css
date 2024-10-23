@@ -14,11 +14,13 @@
 body {
     background-color: var(--bg-100);
     color: var(--text-100);
-    font-family: mukta;
+    margin: 0;
+    font-family: Catarman, sans-serif;
 }
 
 h1, h2 {
     color: var(--primary-100);
+    font-family: mukta, sans-serif;
 }
 
 nav { 
@@ -50,45 +52,4 @@ li a {
 li a:hover {
     background-color: var(--bg-300);
     color: var(--accent-200);
-  }
-.mukta-extralight {
-    font-family: "Mukta", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-  }
-  
-  .mukta-light {
-    font-family: "Mukta", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .mukta-regular {
-    font-family: "Mukta", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .mukta-medium {
-    font-family: "Mukta", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .mukta-semibold {
-    font-family: "Mukta", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  .mukta-bold {
-    font-family: "Mukta", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .mukta-extrabold {
-    font-family: "Mukta", sans-serif;
-    font-weight: 800;
-    font-style: normal;
   }
