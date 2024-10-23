@@ -21,20 +21,36 @@ h1, h2 {
     color: var(--primary-100);
 }
 
-nav {
-  li {
-    cursor:pointer;
-    text-decoration: none;
-  }
-
-  height: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+nav { 
+  height: auto;
+  width: 100%;
   background-color: var(--bg-200);
 }
 
+ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+  margin: 20px;
+}
+
+li a {
+  display: inline;
+  color: var(--accent-100);
+  text-decoration: none;
+}
+
+li a:hover {
+    background-color: var(--bg-300);
+    color: var(--accent-200);
+  }
 .mukta-extralight {
     font-family: "Mukta", sans-serif;
     font-weight: 200;
