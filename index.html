@@ -9,9 +9,10 @@
     <meta name="keywords" content="Desarrollador web, c#, .net, asp.net core, backend, full stack">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="stylesheets/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Ek+Mukta:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
     <title>Kevin Mejia - Curriculum Vitae</title>
 </head>
 
@@ -20,23 +21,28 @@
         <div class="sideContent">
             <img id="photo" src="images/me.png" alt="Yo">
             <h2>Curriculum Vitae</h2>
-            <h2>Kevin Mejia</h2> 
-        </div>               
-        <nav>
+            <h2>Kevin Mejía</h2>
+        </div>
+        <nav id="navigation">
             <ul>
-                <li><a href="#resumen">Resumen</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#educacion">Educación</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
+                <li>
+                    <div id="nav-item">
+                        <i class="material-icons">book</i>
+                        <a href="#resumen">Resumen</a>
+                    </div>
+                </li>
+                <li><a href="#experiencia"><i class="material-icons">work</i>Experiencia</a></li>
+                <li><a href="#educacion"><i class="material-icons">school</i>Educación</a></li>
+                <li><a href="#habilidades"><i class="material-icons">star</i>Habilidades</a></li>
+                <li><a href="#proyectos"><i class="material-icons">code</i>Proyectos</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main id="content">
         <section id="resumen">
-            <h2 class="subtitle">Resumen</h2>
-            <h2 class="subtitle">Desarrollador Backend en .NET | kesameji@espol.edu.ec | (+593) 998190546</h2>
+            <h2 class="subtitle">RESUMEN</h2>
+            <p class="subtitle">Desarrollador Backend en .NET | kesameji@espol.edu.ec | (+593) 998190546</p>
             <p>*Se describe*</p>
         </section>
         <section id="experiencia">
