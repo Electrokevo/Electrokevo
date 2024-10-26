@@ -213,7 +213,7 @@ table {
   flex-basis: 1;
 }
 
-.edu{
+.edu {
   text-align: center;
 }
 
@@ -222,4 +222,92 @@ table {
   max-height: 75%;
   border: var(--accent-100) 3px solid;
   border-radius: 50%;
+}
+
+/*--------------------------------------------------------------Contact Section--------------------------------------------------------------------*/
+.contacto {
+  background-color: var(--bg-200);
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2em;
+  align-items: center;
+  padding: 25px 10px;
+  max-width: 70%;
+  margin: auto;
+}
+
+.contact-info {
+  display: inline;
+  max-width: 35%;
+}
+
+.contact-form {
+  padding: 25px;
+  border-radius: 2em;
+  background-image: linear-gradient(to right, var(--primary-100), var(--primary-200));
+  color: var(--text-200);
+  display: grid;
+  grid-template-areas:
+    "nombre apellido"
+    "email email"
+    "telefono telefono"
+    "mensaje mensaje"
+    "enviar enviar";
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+  gap: 5px;
+}
+
+input {
+  max-height: 100px;
+  height: 25px;
+  border: var(--text-200) 1px solid;
+  border-radius: 5pt;
+}
+
+textarea {
+  height: 80px;
+}
+
+.nombre {
+  grid-area: nombre;
+  padding-right: 5px;
+}
+
+.apellido {
+  grid-area: apellido;
+  padding-left: 5px;
+}
+
+.email {
+  grid-area: email;
+}
+
+.telefono {
+  grid-area: telefono;
+}
+
+.mensaje {
+  grid-area: mensaje;
+}
+
+.enviar {
+  grid-area: enviar;
+  background-color: var(--accent-200);
+  padding: 10px;
+  color: var(--text-200);
+}
+
+.enviar:hover {
+  background-color: var(--accent-100);
+  color: var(--bg-200);
+}
+
+.border {
+  border: var(--text-200) 1px solid;
+  border-radius: 5pt;
 }
