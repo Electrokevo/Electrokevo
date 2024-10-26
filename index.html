@@ -17,13 +17,13 @@
 </head>
 
 <body>
-    <header>
+    <header class="lateral">
         <div class="sideContent">
-            <img id="photo" src="images/me.png" alt="Yo">
+            <img class="photo" src="images/me.png" alt="Yo">
             <h2>Curriculum Vitae</h2>
             <h2>Kevin Mejía</h2>
         </div>
-        <nav id="navigation">
+        <nav class="navigation">
             <ul>
                 <li><a href="#resumen"><i class="material-icons">book</i>Resumen</a></li>
                 <li><a href="#experiencia"><i class="material-icons">work</i>Experiencia</a></li>
@@ -34,17 +34,15 @@
         </nav>
     </header>
 
-    <main id="content">
-        <section id="resumen">
-            <div id="res-text">
-                <h2 class="subtitle">RESUMEN</h2>
+    <main class="content">
+        <section class="resumen" id="resumen">
+            <div class="res-text">
+                <h2 class="subtitle">Resumen</h2>
                 <p class="subtitle">Desarrollador Backend en .NET | kesameji@espol.edu.ec | (+593) 998190546</p>
                 <p>Programador Junior motivado y con sólida base en desarrollo de software, especialmente en lenguajes
-                    como
-                    C#, Java y C.</p>Experiencia en proyectos académicos y personales que incluyen la creación de
-                aplicaciones web y scripts automatizados, ademas de aplicaciones de escritorio.<p>
-
-                </p>
+                    como C#, Java y C.</p>
+                <p>Experiencia en proyectos académicos y personales que incluyen la creación de
+                    aplicaciones web, scripts automatizados y aplicaciones de escritorio.</p>
                 <p>Habilidad para
                     trabajar en equipo y aprender nuevas
                     tecnologías rápidamente.</p>
@@ -56,42 +54,41 @@
                 <p>Destacado por mi capacidad de resolver problemas complejos y colaborar eficazmente en entornos
                     multidisciplinarios</p>
             </div>
-            <div id="res-video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/QNJL6nfu__Q?si=7hratVannhOBpKzc"
-                    title="YouTube video player" border-radius="1em"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
+            <video width="560" height="315" class="res-video" controls>
+                <source src="videos/video.mp4" type="video/mp4">
+            </video>
         </section>
-        <section id="experiencia">
+        <section class="experiencia" id="experiencia">
             <h2 class="subtitle">Experiencia</h2>
             <p>Nula</p>
         </section>
-        <section id="educacion">
-            <h2 class="subtitle">Educación</h2>
-            <table border="3px">
-                <thead>
-                    <tr>
-                        <th>Institucion</th>
-                        <th>Carrera</th>
-                        <th>Año</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>ANAI</td>
-                        <td>Bachillerato tecnico en informatica</td>
-                        <td>2019-2021</td>
-                    </tr>
-                    <tr>
-                        <td>ESPOL</td>
-                        <td>Ingenieria en Computacion</td>
-                        <td>2022-</td>
-                    </tr>
-                </tbody>
-            </table>
+        <section class="educacion" id="educacion">
+            <h2 class="subtitle edu">Educación</h2>
+            <div class="instituciones">
+                <div class="institucion">
+                    <div class="resum">
+                        <h3>Espol - Escuela Superior Politecnica del Litoral</h3>
+                        <p>Ingenieria en Computacion</p>
+                        <p>Guayaquil - Ecuador</p>
+                        <p>2022 - 2026</p>
+                        <p>GPA: 8.63</p>
+                    </div>
+                    <img class="logo" src="images/logo_espol.png" alt="logo espol">
+                </div>
+
+                <div class="institucion">
+                    <div class="resum">
+                        <h3>ANAI - Academia Naval Almirante Illinghworth</h3>
+                        <p>Bachillerato tecnico en informatica</p>
+                        <p>Guayaquil - Ecuador</p>
+                        <p>2019 - 2021</p>
+                        <p>GPA: 9.72</p>
+                    </div>
+                    <img class="logo" src="images/anai.jpg" alt="logo anai">
+                </div>
+            </div>
         </section>
-        <section id="habilidades">
+        <section class="habilidades" id="habilidades">
             <h2 class="subtitle">Habilidades</h2>
             <ul>
                 <li></li>
@@ -101,7 +98,7 @@
             </ul>
             <p></p>
         </section>
-        <section id="proyectos">
+        <section class="proyectos" id="proyectos">
             <h2 class="subtitle">Proyectos</h2>
             <ul>
                 <li>WebAPI</li>
@@ -110,23 +107,24 @@
                 <li>Web App</li>
             </ul>
         </section>
-        <section id="Contacto">
+        <section class="Contacto" id="Contacto">
+            <h2 class="subtitle">Contacto</h2>
             <form>
                 <div>
                     <label for="nombre">Nombre Completo:</label>
-                    <input type="text" id="nombre" name="nombre" required>
+                    <input type="text" class="nombre" name="nombre" required>
                 </div>
                 <div>
                     <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" class="email" name="email" required>
                 </div>
                 <div>
                     <label for="experiencia">Experiencia Laboral:</label>
-                    <textarea id="experiencia" name="experiencia" rows="5" required></textarea>
+                    <textarea class="experiencia" name="experiencia" rows="5" required></textarea>
                 </div>
                 <div>
                     <label for="educacion">Educación:</label>
-                    <textarea id="educacion" name="educacion" rows="5" required></textarea>
+                    <textarea class="educacion" name="educacion" rows="5" required></textarea>
                 </div>
                 <div>
                     <label>Habilidades Técnicas:</label>
@@ -136,7 +134,7 @@
                 </div>
                 <div>
                     <label for="intereses">Intereses:</label>
-                    <select id="intereses" name="intereses">
+                    <select class="intereses" name="intereses">
                         <option value="desarrollo">Desarrollo Web</option>
                         <option value="diseno">Diseño Gráfico</option>
                         <option value="marketing">Marketing Digital</option>
@@ -146,7 +144,7 @@
             </form>
         </section>
     </main>
-    <footer>
+    <footer class="content">
         <p>© Kevin Mejia - 2024</p>
         <ul>
             <li><a href="https://www.linkedin.com/in/ksmejia">LinkedIn</a></li>

@@ -1,14 +1,66 @@
 * {
-  --primary-100:#6A00FF;
-  --primary-200:#a64aff;
-  --primary-300:#ffb1ff;
-  --accent-100:#00E5FF;
-  --accent-200:#00829b;
-  --text-100:#FFFFFF;
-  --text-200:#e0e0e0;
-  --bg-100:#1A1A1A;
-  --bg-200:#292929;
-  --bg-300:#404040;
+  --primary-100: #6A00FF;
+  --primary-200: #a64aff;
+  --primary-300: #ffb1ff;
+  --accent-100: #00E5FF;
+  --accent-200: #00829b;
+  --text-100: #FFFFFF;
+  --text-200: #e0e0e0;
+  --bg-100: #1A1A1A;
+  --bg-200: #292929;
+  --bg-300: #404040;
+}
+
+@media only screen and (max-width: 1130px) {
+  .lateral {
+    display: flex;
+    width: 100%;
+    height: auto;
+    position: relative;
+    justify-content: space-evenly;
+    padding: 0;
+    border-bottom: var(--primary-100) 2px solid;
+    border-right: 0;
+  }
+
+  .navigation {
+    margin: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .sideContent {
+    content-visibility: hidden;
+    border: 0;
+    max-height: 0px;
+    max-width: 0px;
+  }
+
+  .lateral a {
+    float: left;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+
+  .resumen {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .res-text {
+    display: block;
+    max-width: 700px;
+  }
+
+  .res-video {
+    display: block;
+    max-height: 320px;
+    max-width: 180px;
+  }
+
 }
 
 body {
@@ -17,22 +69,20 @@ body {
   margin: 0;
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 100;
+  font-weight: 200;
   font-style: normal;
 }
 
 i {
- margin-right: 10px;
+  margin-right: 10px;
 }
 
-
-h1,
-h2 {
+.subtitle {
   color: var(--text-100);
   font-family: mukta, sans-serif;
 }
 
-header {
+.lateral {
   margin: 0;
   padding: 10px;
   width: 200px;
@@ -41,7 +91,7 @@ header {
   height: 100%;
   overflow: auto;
   display: grid;
-  grid-template-rows: 1fr 2fr; 
+  grid-template-rows: 1fr 2fr;
   border-right: var(--primary-100) 2px solid;
 }
 
@@ -51,7 +101,7 @@ header {
   border-bottom: var(--primary-100) 2px solid;
 }
 
-#navigation {
+.navigation {
   grid-row: 2;
   align-self: baseline;
   width: inherit;
@@ -59,54 +109,27 @@ header {
   margin: 20px 0 0 0;
 }
 
-#navigation a {
+.navigation a {
   display: block;
   color: var(--text-200);
   padding: 16px;
   text-decoration: none;
 }
 
-#navigation a.active {
-  background-color: var(--primary-200);
+.navigation a:active {
+  background-color: var(--accent-200);
   color: var(--text-100);
 }
 
-#navigation a:hover:not(.active) {
+.navigation a:hover:not(.active) {
   background-color: var(--bg-300);
-  color: var(--text-100);
+  color: var(--accent-100);
 }
 
-#content {
+.content {
   margin-left: 240px;
   padding: 10px 16px;
   height: 1fr;
-}
-
-@media screen and (max-width: 700px) {
-  #navigation {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-
-  #navigation a {
-    float: left;
-  }
-
-  main {
-    margin-left: 0;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  #navigation a {
-    text-align: center;
-    float: none;
-  }
-}
-
-#nav-item {
-  display: inline;
 }
 
 ul {
@@ -116,9 +139,9 @@ ul {
   height: 100%;
 }
 
-#photo {
-  height: 21vh;
-  width: 21vh;
+.photo {
+  height: 180px;
+  width: 180px;
   border: var(--accent-200) 3px solid;
   border-radius: 50%;
   margin: 20px 0px 10px 0px;
@@ -130,20 +153,73 @@ section {
   margin: 10px;
 }
 
-#resumen{
+/*--------------------------------------------------------------Resumen Section--------------------------------------------------------------------*/
+.resumen {
   background-image: linear-gradient(to right, var(--primary-100), var(--primary-200));
-  display: grid;
-  grid-template-columns: 40% 60%;
+  display: flex;
   justify-content: space-evenly;
   align-items: center;
+  gap: 1rem;
+  min-width: 210px;
 }
 
-#res-video {
-  align-items: center;
-  justify-content: center;
-  align-self: center;
+.res-text {
+  display: inline;
+  max-width: auto;
 }
 
-#experiencia{
+.res-video {
+  display: inline;
+  max-height: 100%;
+  max-width: 100%;
+  padding: 10px;
+}
+
+/*--------------------------------------------------------------Experiencia Section--------------------------------------------------------------------*/
+.experiencia {
   background-image: linear-gradient(to right, var(--bg-200), var(--bg-300));
+  text-align: center;
+}
+
+/*--------------------------------------------------------------Educacion Section--------------------------------------------------------------------*/
+.educacion {
+  width: inherit;
+  padding: 10px;
+  gap: 2rem;
+}
+
+table {
+  border: var(--accent-200) 3px solid;
+}
+
+.institucion {
+  background-image: linear-gradient(to right, var(--primary-100), var(--primary-200));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+  border-radius: 1em;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  height: 200px;
+  width: 49%;
+}
+
+
+.instituciones {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 1;
+}
+
+.edu{
+  text-align: center;
+}
+
+.logo {
+  max-width: 75%;
+  max-height: 75%;
+  border: var(--accent-100) 3px solid;
+  border-radius: 50%;
 }
