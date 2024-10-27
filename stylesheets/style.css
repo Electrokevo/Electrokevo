@@ -223,6 +223,13 @@ table {
   border: var(--accent-100) 3px solid;
   border-radius: 50%;
 }
+/*--------------------------------------------------------------Project Section--------------------------------------------------------------------*/
+.project{
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 0;
+}
+
 
 /*--------------------------------------------------------------Contact Section--------------------------------------------------------------------*/
 .contacto {
@@ -265,7 +272,7 @@ table {
 input {
   max-height: 100px;
   height: 25px;
-  border: var(--text-200) 1px solid;
+  border: var(--primary-300) 1px solid;
   border-radius: 5pt;
 }
 
@@ -308,12 +315,12 @@ textarea {
 }
 
 .border {
-  border: var(--text-200) 1px solid;
+  border: var(--primary-300) 1px solid;
   border-radius: 5pt;
 }
 
 
-
+/*--------------------------------------------------------------Footer Section--------------------------------------------------------------------*/
 .footer{
   display: flex;
   justify-content: space-evenly;
@@ -344,7 +351,13 @@ textarea {
 }
 
 .mapa {
-  border: var(--text-200) 1px solid;
+  border: var(--primary-300) 2px solid;
   border-radius: 5pt;
+}
 
+.social-logo{
+  border: var(--primary-200) 2px solid;
+  border-radius: 2pt;
+  max-width: 30px;
+  max-height: 30px;
 }
