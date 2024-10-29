@@ -92,7 +92,7 @@ i {
   height: 100%;
   overflow: auto;
   display: grid;
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: 35% auto;
   border-right: var(--primary-100) 2px solid;
 }
 
@@ -102,12 +102,16 @@ i {
   border-bottom: var(--primary-100) 2px solid;
 }
 
+.sideContent h2 {
+  margin:10px 0px;
+}
+
 .photo {
   height: 40%;
-  width: 60%;
+  width: 50%;
   border: var(--accent-200) 3px solid;
   border-radius: 50%;
-  margin: 20px 0px 10px 0px;
+  margin: 15px 0px 10px 0px;
 }
 
 .navigation {
@@ -232,6 +236,18 @@ table {
   border: var(--accent-100) 3px solid;
   border-radius: 50%;
 }
+/*--------------------------------------------------------------Skills Section--------------------------------------------------------------------*/
+.skills {
+  display:flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  background-color: var(--bg-200);
+  border-radius: 5pt;
+  padding: 20px;
+  width: inherit;
+}
+
+
 /*--------------------------------------------------------------Project Section--------------------------------------------------------------------*/
 .project{
   display: flex;
