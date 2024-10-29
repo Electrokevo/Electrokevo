@@ -247,7 +247,15 @@ table {
   width: inherit;
 }
 
+.skills li {
+  text-align: center;
+}
 
+.icon-skill{
+  width: 100px;
+  height: 100px;
+  display: block;
+}
 /*--------------------------------------------------------------Project Section--------------------------------------------------------------------*/
 .project{
   display: flex;
